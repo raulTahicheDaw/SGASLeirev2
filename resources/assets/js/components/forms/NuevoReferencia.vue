@@ -73,20 +73,22 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="hijos"
+                            <label
                                    class="col-sm-2 control-label">Hijos</label>
                             <div class="col-sm-4">
-                                <select name="hijos" id="hijos" class="form-control">
+                                <select class="form-control" v-model="hijos">
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="mas">más</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
                                 </select>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -140,8 +142,20 @@
                             <h3 class="box-title">Otra información</h3>
                         </div>
                         <div class="box-body">
-                                                <textarea name="otra" id="otra" rows="2"
-                                                          placeholder="Observaciones..." class="form-control"></textarea>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Cía. Origen</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Compañía de origen...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Observaciones</label>
+                                <div class="col-sm-10">
+                                    <textarea name="otra" id="otra" rows="2"
+                                      placeholder="Observaciones..." class="form-control"></textarea>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -156,12 +170,15 @@
 
 <script>
     export default {
-        name: "NuevoCliente"
+        name: "NuevoReferencia",
+        data(){
+            return{
+                hijos: 0
+            }
+        }
     }
 </script>
 
 <style scoped>
-.etiquetas{
-    width: 50px;
-}
+
 </style>

@@ -1,24 +1,26 @@
 <template>
     <div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
-
-            <p class="help-block">Example block-level help text here.</p>
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"> Check me out
-            </label>
-        </div>
+        <form role="form">
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-6">
+                    <label>Nombre</label>
+                        <input type="text" class="form-control" id="nombreRamo" placeholder="Introduce un ramo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <label>Descripción</label>
+                    <input type="text" class="form-control" id="descripcionRamo"
+                           placeholder="Introduce una breve descripción">
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <button type="reset" class="btn btn-default">Cancelar</button>
+                <button type="submit" class="btn btn-info pull-right">Guardar</button>
+            </div>
+        </form>
     </div>
 </template>
 

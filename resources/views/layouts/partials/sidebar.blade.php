@@ -43,51 +43,61 @@
             <li class="treeview">
                 <a href="#"><i class='fa fa-tty'></i> <span>Referencias</span><i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li @click="menu=1"><a href="#"><i class="fa fa-list text-info"></i> Listado Referencias</a></li>
-                    <li @click="menu=2"><a href="#"><i class="fa fa-plus text-green"></i> Nueva Referencia</a></li>
+                    <li @click="menu=3"><a href="#"><i class="fa fa-list text-info"></i> Listado Referencias</a></li>
+                    <li @click="menu=4"><a href="#"><i class="fa fa-plus text-green"></i> Nueva Referencia</a></li>
                 </ul>
             </li>            <li class="treeview">
                 <a href="#"><i class='fa fa-calendar'></i> <span>Agenda</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li @click="menu=3">
+                    <li @click="menu=5">
                         <a href="#"><i class="fa fa-calendar-plus-o text-red"></i> Citas del dia
                             <span class="pull-right-container">
                                 <span class="label label-primary pull-right">4</span>
                              </span>
                         </a>
                     </li>
-                    <li @click="menu=4"><a href="#"><i class="fa fa-calendar text-purple"></i> Caledario</a></li>
-                    <li @click="menu=5"><a href="#"><i class="fa fa-calendar-check-o text-yellow"></i> Vencimientos</a></li>
+                    <li @click="menu=6"><a href="#"><i class="fa fa-calendar text-purple"></i> Caledario</a></li>
+                    <li @click="menu=7"><a href="#"><i class="fa fa-calendar-check-o text-yellow"></i> Vencimientos</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#"><i class='fa fa-print'></i> <span>Informes</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li @click="menu=6"><a href="#"><i class="fa fa-file-pdf-o"></i> Listado PDF de Clientes </a></li>
-                    <li @click="menu=7"><a href="#"><i class="fa fa-file-pdf-o"></i> Listado PDF de Referencias</a></li>
-                    <li @click="menu=8"><a href="#"><i class="fa fa-file-pdf-o"></i> Listado PDF de Vencimientos</a></li>
+                    <li @click="menu=8"><a href="#"><i class="fa fa-file-pdf-o"></i> Listado PDF de Clientes </a></li>
+                    <li @click="menu=9"><a href="#"><i class="fa fa-file-pdf-o"></i> Listado PDF de Referencias</a></li>
+                    <li @click="menu=10"><a href="#"><i class="fa fa-file-pdf-o"></i> Listado PDF de Vencimientos</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#"><i class='fa fa-bar-chart'></i> <span>Estadísticas</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li @click="menu=9"><a href="#"><i class="fa fa-pie-chart text-yellow"></i> Productos más contratados </a></li>
-                    <li @click="menu=10"><a href="#"><i class="fa  fa-bar-chart text-green"></i> Clientes/Mes</a></li>
-                    <li @click="menu=11"><a href="#"><i class="fa  fa-bar-chart text-blue"></i> Referencias/Mes</a></li>
-                    <li @click="menu=12"><a href="#"><i class="fa fa-line-chart text-light-blue"></i> Referencias a Clientes</a></li>
+                    <li @click="menu=11"><a href="#"><i class="fa fa-pie-chart text-yellow"></i> Productos más contratados </a></li>
+                    <li @click="menu=12"><a href="#"><i class="fa  fa-bar-chart text-green"></i> Clientes/Mes</a></li>
+                    <li @click="menu=13"><a href="#"><i class="fa  fa-bar-chart text-blue"></i> Referencias/Mes</a></li>
+                    <li @click="menu=14"><a href="#"><i class="fa fa-line-chart text-light-blue"></i> Referencias a Clientes</a></li>
                 </ul>
             </li>
             <li class="treeview">
                 <a href="#"><i class='fa fa-laptop'></i> <span>Configuración</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li @click="menu=13"><a href="#"><i class="fa fa-medkit"></i> Productos </a></li>
                     <li class="treeview"><a href="#"><i class="fa fa-sitemap"></i> Ramos<i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-list text-info"></i> Listado Ramos</a></li>
-                            <li><a href="#"><i class="fa fa-plus text-green"></i> Nuevo Ramo</a></li>
+                            <li @click="menu=15"><a href="#"><i class="fa fa-list text-info"></i> Listado Ramos</a></li>
+                            <li @click="menu=16"><a href="#"><i class="fa fa-plus text-green"></i> Nuevo Ramo</a></li>
                         </ul>
                     </li>
-                    <li @click="menu=15"><a href="#"><i class="fa fa-tags"></i> Categorías Clientes</a></li>
+                    <li class="treeview"><a href="#"><i class="fa fa-medkit"></i> Productos<i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-list text-info"></i> Listado Productos</a></li>
+                            <li><a href="#"><i class="fa fa-plus text-green"></i> Nuevo Producto</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview"><a href="#"><i class="fa fa-tags"></i> Categorías Clientes<i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-list text-info"></i> Listado Categorías</a></li>
+                            <li><a href="#"><i class="fa fa-plus text-green"></i> Nueva Categoría</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

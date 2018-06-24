@@ -12,11 +12,11 @@
 <script>
     import Vue from 'vue'
     import components from './comps/'
-    import {datosClientes} from '../datos';
+    import { datosReferencias } from '../datos';
 
     export default {
         components,
-        name: 'FriendsTable', // `name` is required as a recursive component
+        name: 'ReferenciasTable', // `name` is required as a recursive component
         props: ['row'], // from the parent FriendsTable (if exists)
         data () {
             const amINestedComp = !!this.row
@@ -30,20 +30,14 @@
                     const cols = [
                         { title: 'Nombre', field: 'nombre', thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
                         { title: 'Apellidos', field: 'apellidos', thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
-                        { title: 'Email', field: 'email', visible: false, thComp: 'FilterTh', tdComp: 'Email' },
-                        { title: 'Country', field: 'country', thComp: 'FilterTh', thStyle: { fontWeight: 'normal' } },
-                        { title: 'IP', field: 'ip', visible: false, tdComp: 'IP' },
-                        { title: 'Age', field: 'age', sortable: true, thClass: 'text-info', tdClass: 'text-success' },
-                        { title: 'Create time', field: 'createTime', sortable: true, colClass: 'w-240', thComp: 'CreatetimeTh', tdComp: 'CreatetimeTd' },
-                        { title: 'Color', field: 'color', explain: 'Favorite color', visible: false, tdComp: 'Color' },
-                        { title: 'Language', field: 'lang', visible: false, thComp: 'FilterTh' },
-                        { title: 'PL', field: 'programLang', explain: 'Programming Language', visible: false, thComp: 'FilterTh' },
-                        { title: 'Operation', tdComp: 'Opt', visible: 'true' }
+                        { title: 'Dirección', field: 'direccion', thComp: 'FilterTh', thStyle: { fontWeight: 'normal' } },
+                        { title: 'Localidad', field: 'localidad', thComp: 'FilterTh', thStyle: { fontWeight: 'normal' } },
+                        { title: 'Teléfono', field: 'telefono', tdComp: 'IP' },
+                        { title: 'Observaciones', field: 'observaciones', thStyle: { fontWeight: 'normal' } }
                     ]
                     const groupsDef = {
-                        Normal: ['Nombre','Apellidos', 'Email', 'Country', 'IP'],
-                        Sortable: ['UID', 'Age', 'Create time'],
-                        Extra: ['Operation', 'Color', 'Language', 'PL']
+                        Normal: ['Nombre','Apellidos','Dirección','Localidad', 'Teléfono','Observaciones'],
+                        Sortable: ['UID', 'Localidad', 'Apellidos', 'Nombre'],
                     }
                     return cols.map(col => {
                         Object.keys(groupsDef).forEach(groupName => {
@@ -78,7 +72,7 @@
         },
         methods: {
             handleQueryChange () {
-                datosClientes(this.query).then(({ rows, total, summary }) => {
+                datosReferencias(this.query).then(({ rows, total, summary }) => {
                     this.data = rows
                     this.total = total
                     this.summary = summary
