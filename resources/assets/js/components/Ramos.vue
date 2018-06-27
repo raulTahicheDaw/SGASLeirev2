@@ -30,9 +30,10 @@
                     const cols = [
                         { title: 'Nombre', field: 'nombre', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
                         { title: 'Descripcion', field: 'descripcion', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
+                        { title: 'Estado', field: 'estado', sortable: true, thComp: 'FilterTh'}
                     ]
                     const groupsDef = {
-                        Normal: ['Nombre','Descripcion'],
+                        Normal: [ 'Nombre', 'Descripcion', 'Estado'],
                     }
                     return cols.map(col => {
                         Object.keys(groupsDef).forEach(groupName => {

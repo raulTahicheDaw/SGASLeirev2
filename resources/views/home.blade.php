@@ -212,7 +212,7 @@
                     <!-- Default box -->
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Menu 15</h3>
+                            <h3 class="box-title">Ramos</h3>
                         </div>
                         <div class="box-body">
                             <ramos-component></ramos-component>
@@ -230,6 +230,36 @@
                             </div>
                             <div class="box-body">
                                 <nuevo-ramo-component></nuevo-ramo-component>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </template>
+                <template v-if="menu==17">
+                    <div class="col-md-12">
+                        <!-- Default box -->
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Productos</h3>
+                            </div>
+                            <div class="box-body">
+                                <productos-component></productos-component>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </template>
+                <template v-if="menu==18">
+                    <div class="col-md-10 col-md-offset-1">
+                        <!-- Default box -->
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Nuevo Producto</h3>
+                            </div>
+                            <div class="box-body">
+                                <nuevo-producto-component></nuevo-producto-component>
                             </div>
                             <!-- /.box-body -->
                         </div>

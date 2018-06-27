@@ -88,8 +88,8 @@
                     </li>
                     <li class="treeview"><a href="#"><i class="fa fa-medkit"></i> Productos<i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-list text-info"></i> Listado Productos</a></li>
-                            <li><a href="#"><i class="fa fa-plus text-green"></i> Nuevo Producto</a></li>
+                            <li @click="menu=17"><a href="#"><i class="fa fa-list text-info"></i> Listado Productos</a></li>
+                            <li @click="menu=18"><a href="#"><i class="fa fa-plus text-green"></i> Nuevo Producto</a></li>
                         </ul>
                     </li>
                     <li class="treeview"><a href="#"><i class="fa fa-tags"></i> Categorías Clientes<i class="fa fa-angle-left pull-right"></i></a>

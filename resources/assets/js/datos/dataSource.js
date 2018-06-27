@@ -34,11 +34,28 @@ const referencias = [
 ];
 
 const ramos = [
-    {uid: 0, nombre: 'Vida', descripcion: 'Seguros de vida, decesos, etc...', activo: 1},
-    {uid: 1, nombre: 'Hogar', descripcion: 'Seguros de hogar', activo: 1},
-    {uid: 2, nombre: 'Accidentes', descripcion: 'Seguros de Accidentes', activo: 1},
-    {uid: 3, nombre: 'Decesos', descripcion: 'Seguros de Decesos', activo: 1}
+    {uid: 0, nombre: 'Vida', descripcion: 'Seguros de vida, decesos, etc...', estado: 1},
+    {uid: 1, nombre: 'Hogar', descripcion: 'Seguros de hogar', estado: 1},
+    {uid: 2, nombre: 'Accidentes', descripcion: 'Seguros de Accidentes', estado: 1},
+    {uid: 3, nombre: 'Decesos', descripcion: 'Seguros de Decesos', estado: 1}
     ];
 
-export { clientes, ramos, referencias };
+const productos = [
+    {uid: 0, nombre: 'HogarPro', descripcion: 'Con las coberturas imprescindibles de robo, incendio, daños por agua, responsabilidad civil y con una serie de ventajas que lo diferencian del resto de Seguros de Hogar de gama esencial.',
+        ramo: 1, estado: 1
+    },
+    {uid: 1, nombre: 'HogarMax', descripcion: 'además de incluir todas las garantías básicas incorpora otras coberturas como daños estéticos, daños eléctricos, rotura de placas de vitrocerámica, atraco fuera de la vivienda, etc.',
+        ramo: 1, estado: 1
+    },
+    {uid: 2, nombre: 'HogarLux', descripcion: 'es el producto que Preventiva ha diseñado para aquellos hogares que demandan las garantías más completas.',
+        ramo: 1, estado: 1
+    },
+    {uid: 3, nombre: 'Afin2', descripcion: 'es un producto de servicios integrado por diversas garantías, dirigidas a la protección de la unidad familiar. ',
+        ramo: 3, estado: 1
+    },
+    {uid: 4, nombre: 'ProTGT', descripcion: 'es el seguro que garantiza el futuro frente a cualquier tipo de accidente.',
+        ramo: 2, estado: 1
+    }
+]
+export { clientes, ramos, referencias, productos };
 
