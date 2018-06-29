@@ -20,11 +20,13 @@ Vue.component('clientes-component', require('./components/Clientes.vue'));
 Vue.component('ramos-component', require('./components/Ramos.vue'));
 Vue.component('referencias-component', require('./components/Referencias.vue'));
 Vue.component('productos-component', require('./components/Productos'));
+Vue.component('categorias-clientes-component', require('./components/CategoriasClientes'));
 
 Vue.component('nuevo-cliente-component', require('./components/forms/NuevoCliente'));
 Vue.component('nuevo-ramo-component', require('./components/forms/NuevoRamo'));
 Vue.component('nuevo-referencia-component', require('./components/forms/NuevoReferencia'));
 Vue.component('nuevo-producto-component', require('./components/forms/NuevoProducto'));
+Vue.component('nuevo-categoria-cliente-component', require('./components/forms/NuevoCategoriaCliente'));
 
 const app = new Vue({
     el: '#app',

@@ -266,9 +266,42 @@
                         <!-- /.box -->
                     </div>
                 </template>
+                <template v-if="menu==19">
+                    <div class="col-md-12">
+                        <!-- Default box -->
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Categorías Clientes</h3>
+                            </div>
+                            <div class="box-body">
+                                <categorias-clientes-component></categorias-clientes-component>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </template>
+                <template v-if="menu==20">
+                    <div class="col-md-10 col-md-offset-1">
+                        <!-- Default box -->
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Nueva Categoría </h3>
+                            </div>
+                            <div class="box-body">
+                                <nuevo-categoria-cliente-component></nuevo-categoria-cliente-component>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </template>
 
             </div>
         </div>
     </div>
 @endsection
 
+<script>
+
+</script>

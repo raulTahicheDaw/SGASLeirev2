@@ -40,6 +40,11 @@ const ramos = [
     {uid: 3, nombre: 'Decesos', descripcion: 'Seguros de Decesos', estado: 1}
     ];
 
+const categoriasClientes = [
+    {uid: 0, nombre: 'Frecuentes', descripcion: ' Son aquellos que te compran periódicamente', estado: 1},
+    {uid: 1, nombre: 'Habituales', descripcion: ' Son clientes que han realizado compras esporádicas', estado: 1},
+    {uid: 2, nombre: 'Ocasionales', descripcion: ' Son clientes que han comprado alguna vez pero no se espera que compren más', estado: 1},
+];
 const productos = [
     {uid: 0, nombre: 'HogarPro', descripcion: 'Con las coberturas imprescindibles de robo, incendio, daños por agua, responsabilidad civil y con una serie de ventajas que lo diferencian del resto de Seguros de Hogar de gama esencial.',
         ramo: 1, estado: 1
@@ -57,5 +62,5 @@ const productos = [
         ramo: 2, estado: 1
     }
 ]
-export { clientes, ramos, referencias, productos };
+export { clientes, ramos, referencias, productos, categoriasClientes };
 

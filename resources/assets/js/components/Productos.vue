@@ -28,7 +28,7 @@
                 pageSizeOptions: [5, 10, 15, 20],
                 columns: (() => {
                     const cols = [
-                        { title: 'Nombre', field: 'nombre', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
+                        { title: 'Nombre', field: 'nombre', sortable: true, thComp: 'FilterTh', tdStyle: {fontWeight: 'bold', fontStyle: 'italic' } },
                         { title: 'Descripcion', field: 'descripcion', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
                         { title: 'Ramo', field: 'ramo', sortable: true, thComp: 'FilterTh' },
                         { title: 'Estado', field: 'estado', sortable: true, thComp: 'FilterTh' },

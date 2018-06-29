@@ -5,14 +5,14 @@
                 <div class="row">
                     <div class="col-md-6">
                     <label>Nombre</label>
-                        <input type="text" class="form-control" id="nombreRamo" placeholder="Introduce un ramo">
+                        <input type="text" class="form-control" id="nombreRamo" placeholder="Introduce un nombre para el Ramo">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                     <label>Descripción</label>
                     <input type="text" class="form-control" id="descripcionRamo"
-                           placeholder="Introduce una breve descripción">
+                           placeholder="Introduce una breve descripción del Ramoz<<">
                     </div>
                 </div>
             </div>

@@ -5,25 +5,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <label>Nombre</label>
-                        <input type="text" class="form-control" id="nombreRamo" placeholder="Introduce Nombre del Producto...">
+                        <input type="text" class="form-control" id="nombreRamo" placeholder="Introduce un nombre para la Categoría">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <label>Descripción</label>
                         <input type="text" class="form-control" id="descripcionRamo"
-                               placeholder="Introduce una breve descripción del  Producto...">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <label>Ramo</label>
-                        <select name="ramo" id="rao" class="form-control">
-                            <option value="0">Vida</option>
-                            <option value="1">Hogar</option>
-                            <option value="2">Accidentes</option>
-                            <option value="3">Decesos</option>
-                        </select>
+                               placeholder="Introduce una breve descripción">
                     </div>
                 </div>
             </div>
@@ -37,7 +26,7 @@
 
 <script>
     export default {
-        name: "NuevoRamo"
+        name: "NuevoCategoriaCliente"
     }
 </script>
 

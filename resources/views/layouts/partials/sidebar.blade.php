@@ -94,8 +94,8 @@
                     </li>
                     <li class="treeview"><a href="#"><i class="fa fa-tags"></i> Categorías Clientes<i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-list text-info"></i> Listado Categorías</a></li>
-                            <li><a href="#"><i class="fa fa-plus text-green"></i> Nueva Categoría</a></li>
+                            <li @click="menu=19"><a href="#"><i class="fa fa-list text-info"></i> Listado Categorías</a></li>
+                            <li @click="menu=20"><a href="#"><i class="fa fa-plus text-green"></i> Nueva Categoría</a></li>
                         </ul>
                     </li>
                 </ul>

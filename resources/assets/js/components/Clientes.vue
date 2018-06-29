@@ -28,8 +28,8 @@
                 pageSizeOptions: [5, 10, 15, 20],
                 columns: (() => {
                     const cols = [
-                        { title: 'Nombre', field: 'nombre', thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
-                        { title: 'Apellidos', field: 'apellidos', thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
+                        { title: 'Nombre', field: 'nombre', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
+                        { title: 'Apellidos', field: 'apellidos', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
                         { title: 'Email', field: 'email', visible: false, thComp: 'FilterTh', tdComp: 'Email' },
                         { title: 'Country', field: 'country', thComp: 'FilterTh', thStyle: { fontWeight: 'normal' } },
                         { title: 'IP', field: 'ip', visible: false, tdComp: 'IP' },
@@ -61,7 +61,7 @@
                 // `query` will be initialized to `{ limit: 10, offset: 0, sort: '', order: '' }` by default
                 // other query conditions should be either declared explicitly in the following or set with `Vue.set / $vm.$set` manually later
                 // otherwise, the new added properties would not be reactive
-                query: amINestedComp ? { uid: this.row.friends } : {},
+                query: amINestedComp ? { uid: this.row.friends } : { limit: 5 , sort: 'nombre', order: 'asc' },
                 // any other staff that you want to pass to dynamic components (thComp / tdComp / nested components)
                 xprops: {
                     eventbus: new Vue()

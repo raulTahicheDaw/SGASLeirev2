@@ -12,11 +12,11 @@
 <script>
     import Vue from 'vue'
     import components from './comps/'
-    import {datosRamos} from '../datos';
+    import {datosCategoriasClientes} from '../datos';
 
     export default {
         components,
-        name: 'RamosTable', // `name` is required as a recursive component
+        name: 'CategoriasClientesTable', // `name` is required as a recursive component
         props: ['row'], // from the parent FriendsTable (if exists)
         data () {
             const amINestedComp = !!this.row
@@ -28,7 +28,7 @@
                 pageSizeOptions: [5, 10, 15, 20],
                 columns: (() => {
                     const cols = [
-                        { title: 'Nombre', field: 'nombre', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic', fontWeight:'bold' } },
+                        { title: 'Nombre', field: 'nombre', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic', fontWeight: 'bold' } },
                         { title: 'Descripcion', field: 'descripcion', sortable: true, thComp: 'FilterTh', tdStyle: { fontStyle: 'italic' } },
                         { title: 'Estado', field: 'estado', sortable: true, thComp: 'FilterTh'}
                     ]
@@ -68,7 +68,7 @@
         },
         methods: {
             handleQueryChange () {
-                datosRamos(this.query).then(({ rows, total, summary }) => {
+                datosCategoriasClientes(this.query).then(({ rows, total, summary }) => {
                     this.data = rows
                     this.total = total
                     this.summary = summary
